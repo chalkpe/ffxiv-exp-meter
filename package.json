@@ -1,0 +1,28 @@
+{
+  "name": "ffxiv-exp-meter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Final Fantasy XIV ACT overlay for recording Engineering/Survival Manual usage",
+  "repository": "https://github.com/ChalkPE/ffxiv-exp-meter",
+  "author": "ChalkPE",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.1.2",
+    "push-dir": "^0.4.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "chrome 69"
+  ],
+  "vue": {
+    "publicPath": "./"
+  }
+}
