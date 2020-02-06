@@ -1,18 +1,17 @@
 <template>
-  <div id="app">
+  <main id="app">
     <article v-if="err">
       웹소켓 연결에 실패했습니다…<br>
       오버레이 주소의 HOST_PORT 값을 다시 확인하세요.
     </article>
     <article v-else>
       <p class="title">
-        경험치 상태
-        <span v-if="paused">&nbsp;(기록 중지됨)</span>
+        경험치 상태<span v-if="paused">&nbsp;(기록 중지됨)</span>
       </p>
       <p>누적 경험치 획득량: {{ Math.floor(points) }}</p>
       <p>현재 경험치 증가율: {{ boost }}%</p>
     </article>
-  </div>
+  </main>
 </template>
 
 <style scoped>
